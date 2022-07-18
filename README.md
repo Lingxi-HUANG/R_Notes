@@ -25,7 +25,7 @@ When making this repository, many thanks to [this github example](https://github
 
 ## :memo: Other Resources
 * [How the BBC Visual and Data Journalism team works with graphics in R](https://github.com/bbc/bbplot) by BBC Visual and Data Journalism
-* [BBC visual and data journalism cookbook for R graphics](https://bbc.github.io/rcookbook/) by BBC Visual and Data Journalism
+* [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/) by BBC Visual and Data Journalism
 * Various chart examples by [R Studio `ggplot2` tutorials](https://rstudio.cloud/learn/primers/3)
 * [R studio cheat sheets](https://rstudio.cloud/learn/cheat-sheets) by R Studio Cloud
 * Quck list of [R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages) by Garrett Grolemund

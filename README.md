@@ -11,18 +11,18 @@ When making this repository, many thanks to [this github example](https://github
 
 | Legend | Topics |
 | ------------- | ------------- |
-|  📚 | Data Cleaning  |
-|  🎨 | Data Visuliazation  |
-|  🔨 | Other Resources  |
+|  :dart: | Data Cleaning  |
+|  :art: | Data Visuliazation  |
+|  :memo: | Other Resources  |
 
 # Notes
-## 📚 Data Cleaning
+## :dart: Data Cleaning
 * [Data cleaning using Tidyverse and various other tools](https://github.com/stonetosky/R_Notes/tree/main/Notes)
 
-## 🎨 Data Visuliazation
+## :art: Data Visuliazation
 * [Examples using ggplot2]()
 * [Geo analysis]()
 
-## 🔨 Other Resources
+## :memo: Other Resources
 * [How the BBC Visual and Data Journalism team works with graphics in R](https://github.com/bbc/bbplot) by BBC Visual and Data Journalism
 * [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/) by BBC Visual and Data Journalism

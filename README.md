@@ -28,3 +28,4 @@ When making this repository, many thanks to [this github example](https://github
 * [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/) by BBC Visual and Data Journalism
 * Various chart examples by [R Studio `ggplot2` tutorials](https://rstudio.cloud/learn/primers/3)
 * [R Studio Cheat Sheets](https://rstudio.cloud/learn/cheat-sheets) by R Studio Cloud
+* Quck List of [R Packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages) by Garrett Grolemund

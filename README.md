@@ -1,4 +1,4 @@
-# R Programming Notes
+# R Coding Notes
 ![](https://img.shields.io/badge/Language-R-blue)
 
 As a newbie of R programming, I am putting up a repository that contains my coding examples of R so I can reference back in the future. 

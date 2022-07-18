@@ -1,7 +1,7 @@
 # R Coding Notes
 ![](https://img.shields.io/badge/Language-R-blue)
 
-As a newbie of R programming, I am putting up a repository that contains my coding examples of R so I can reference back in the future. 
+As a newbie of R, I am putting up a repository that contains my coding examples of R so I can reference back in the future. 
 
 This repository stores notes of R programming and my previous works covering topics of data cleaning and data visualization, as well as external R resources. 
 

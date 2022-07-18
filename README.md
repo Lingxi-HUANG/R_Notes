@@ -24,4 +24,5 @@ When making this repository, many thanks to [this github example](https://github
 * [Geo analysis]()
 
 ## 🔨 Other Resources
-* [How the BBC Visual and Data Journalism team works with graphics in R](https://github.com/bbc/bbplot)
+* [How the BBC Visual and Data Journalism team works with graphics in R](https://github.com/bbc/bbplot) by BBC Visual and Data Journalism
+* [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/) by BBC Visual and Data Journalism

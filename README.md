@@ -18,7 +18,7 @@ When making this repository, I am very grateful to [this github example](https:/
 # Notes
 ## :dart: Data Cleaning
 * [Data cleaning using Tidyverse and various other tools](https://github.com/stonetosky/R_Notes/tree/main/Notes)
-* [Merging dataframes](https://github.com/Lingxi-HUANG/R_Notes/tree/main/Notes/Merging%20Dataframes) examples
+* [Merging dataframes examples](https://github.com/Lingxi-HUANG/R_Notes/tree/main/Notes/Merging%20Dataframes) 
 
 ## :art: Data Visuliazation
 * [Examples using ggplot2]()
@@ -30,4 +30,4 @@ When making this repository, I am very grateful to [this github example](https:/
 * Various chart examples by [R Studio `ggplot2` tutorials](https://rstudio.cloud/learn/primers/3)
 * [R studio cheat sheets](https://rstudio.cloud/learn/cheat-sheets) by R Studio Cloud
 * Quck list of [R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages) by Garrett Grolemund
-* Markdown [`emoji` list](https://gist.github.com/rxaviers/7360908#file-gistfile1-md)
+* Markdown [emoji list](https://gist.github.com/rxaviers/7360908#file-gistfile1-md)

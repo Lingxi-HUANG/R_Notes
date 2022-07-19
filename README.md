@@ -18,7 +18,7 @@ When making this repository, I am very grateful to [this github example](https:/
 # Notes
 ## :dart: Data Cleaning
 * [Data cleaning using Tidyverse and various other tools](https://github.com/stonetosky/R_Notes/tree/main/Notes)
-* Merging dataframes
+* [Merging dataframes](https://github.com/Lingxi-HUANG/R_Notes/tree/main/Notes/Merging%20Dataframes) examples
 
 ## :art: Data Visuliazation
 * [Examples using ggplot2]()

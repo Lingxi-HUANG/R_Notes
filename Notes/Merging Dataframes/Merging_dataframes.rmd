@@ -15,15 +15,19 @@ View(M1)
 ```
 
 Merge the first two dataframes with all observations where empty values to be reflected with NA
-all = TRUE or FALSE. Default setting is FALSE. If it is TRUE, merge will include observations that are not necessarily exist in two dataframes. 
 ```{r}
 M2 <- merge(GPA, DOB, all = TRUE)
 View(M2)
 ```
 
 ### Merge dataframes which column names needed to be mapped and specificed
-By default the data frames are merged on the columns with names they both have, but separate specifications of the columns can be given by by.x and by.y. 
 ```{r}
-M3 <- merge(M2, Postal, by.x = c("Name", "Gender"), by.y = c("col.1", "col.2"), all = TRUE)
+M3 <- merge(M2, Postal, by.x = c("Name", "Gender", "ID"), by.y = c("col.1", "col.2", "ID"), all = TRUE)
 View(M3)
+```
+
+
+### Left join to merge dataframes using base R
+```{r}
+M4 <- merge(M2, Postal, by = "ID", by.x = c("Name", "Gender", "ID"), by.y = c("col.1", "col.2", "ID"), all = TRUE)
 ```

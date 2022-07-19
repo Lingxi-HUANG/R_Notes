@@ -10,7 +10,7 @@ DOB <- read.csv(".../.../DOB.csv", header = T)
 Postal <- read.csv(".../.../Postal Code.csv", header = T)
 ```
 
-### Merge GPA and DOB
+### Merge two dataframes
 Merge the first two dataframes with only overlapping observations
 ```{r}
 M1 <- merge(GPA, DOB)

@@ -1,11 +1,11 @@
 # R Coding Notes
 ![](https://img.shields.io/badge/Language-R-blue)
 
-As a newbie of R, I am putting up a repository that contains my coding examples of R so I can reference back in the future. 
+While a newbie of R, I am often forgetting the structure of some functions, so I figure the best way to this is to put up a repository that contains my coding examples of R so I can reference back in the future. 
 
 This repository stores notes of R programming and my previous works covering topics of data cleaning and data visualization, as well as external R resources. 
 
-When making this repository, many thanks to [this github example](https://github.com/erikaduan/r_tips/blob/master/README.md) and the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) because it was these two that lighted up my passion to embark on my own github journey. 
+When making this repository, I am very grateful to [this github example](https://github.com/erikaduan/r_tips/blob/master/README.md) and the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) because they lighted up my passion to embark on my own R and github journey. 
 
 # Content Summary
 

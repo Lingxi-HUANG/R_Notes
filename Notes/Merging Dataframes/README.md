@@ -1,7 +1,7 @@
 # Merging Dataframes
 
 ## Introduction
-One of the important steps of data cleaning is to put several dataset together. so I list out a few examples of dataframe merging. 
+One of the important steps of data cleaning is to put several dataset together. Below are a few examples of dataframe merging. 
 
 ## Import data into RStudio
 ```{r}

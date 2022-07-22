@@ -34,16 +34,23 @@ Postal <- read.csv(".../.../Postal Code.csv", header = T)
 
 
 
-### Merge two dataframes
+### Merge two dataframes, GPA and DOB
 Merge the first two dataframes with only overlapping observations
 ```{r}
 M1 <- merge(GPA, DOB)
 View(M1)
 ```
+#### M1
+|ID   |Name  |Gender    |GPA|DOB       |
+|-----|------|----------|---|----------|
+|2    |Sally |Female    |4  |22/6/2000 |
+|3    |Chris |Male      |3.6|18/2/1992 |
+|4    |Emma  |Female    |3.8|31/12/1999|
+
 
 Merge the first two dataframes with all observations where empty values to be reflected with NA
 ```{r}
-M2 <- merge(GPA, DOB, all = TRUE)
+M2 <- merge(GPA, DOB, all = TRUE) # the argument all = TRUE means to include all datapoints
 View(M2)
 ```
 

@@ -75,7 +75,8 @@ View(M3)
 
 ## Left join to merge dataframes using base R
 ```{r}
-M4 <- merge(M2, Postal, by = "ID", by.x = c("Name", "Gender", "ID"), by.y = c("col.1", "col.2", "ID"), all = TRUE)
+M4 <- merge(M2, Postal, by = "ID", by.x = c("Name", "Gender", "ID"), by.y = c("col.1", "col.2", "ID"), all = TRUE) 
+# left join by ID while mapping column names
 ```
 |Name  |Gender|ID |GPA |DOB       |Postal.Code|
 |------|------|---|----|----------|-----------|

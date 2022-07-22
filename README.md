@@ -31,4 +31,4 @@ When making this repository, I am very grateful to [this github example](https:/
 * [R studio cheat sheets](https://rstudio.cloud/learn/cheat-sheets) by R Studio Cloud
 * Quck list of [R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages) by Garrett Grolemund
 * Markdown [emoji list](https://gist.github.com/rxaviers/7360908#file-gistfile1-md)
-* CSV to markdown table [online converter] (https://www.convertcsv.com/csv-to-markdown.htm)
+* CSV to markdown table [online converter](https://www.convertcsv.com/csv-to-markdown.htm)

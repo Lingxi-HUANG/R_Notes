@@ -11,7 +11,7 @@ Postal <- read.csv(".../.../Postal Code.csv", header = T)
 ```
 
 <p align="center">  
-<img src="C:\Users\Tom Huang\Pictures\DOB.jpg"
+<img src="C:/Users/Tom Huang/Pictures/DOB.jpg"
 width="600"></center>  
 </p>  
 

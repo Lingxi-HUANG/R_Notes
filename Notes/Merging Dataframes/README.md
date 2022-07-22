@@ -10,7 +10,10 @@ DOB <- read.csv(".../.../DOB.csv", header = T)
 Postal <- read.csv(".../.../Postal Code.csv", header = T)
 ```
 
-![](C:\Users\Tom Huang\Pictures\DOB.JPEG)
+<p align="center">  
+<img src="C:\Users\Tom Huang\Pictures\DOB.jpg"
+width="600"></center>  
+</p>  
 
 ### Merge two dataframes
 Merge the first two dataframes with only overlapping observations

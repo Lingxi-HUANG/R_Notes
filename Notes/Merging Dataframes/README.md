@@ -32,13 +32,14 @@ Postal <- read.csv(".../.../Postal Code.csv", header = T)
 |5  |Harvey|Male |80912      |
 |6  |Grace|Female|45678      |
 
+<br />
+
 ## Merge two dataframes, GPA and DOB
-### Merge the first two dataframes with only overlapping observations
+Merge the first two dataframes with only overlapping observations
 ```{r}
 M1 <- merge(GPA, DOB)
 View(M1)
 ```
-#### M1
 |ID   |Name  |Gender    |GPA|DOB       |
 |-----|------|----------|---|----------|
 |2    |Sally |Female    |4  |22/6/2000 |
@@ -46,13 +47,11 @@ View(M1)
 |4    |Emma  |Female    |3.8|31/12/1999|
 
 
-### Merge the first two dataframes with all observations where empty values to be reflected with NA
+Merge the first two dataframes with all observations where empty values to be reflected with NA
 ```{r}
 M2 <- merge(GPA, DOB, all = TRUE) # the argument all = TRUE means to include all datapoints
 View(M2)
 ```
-
-#### M2
 |ID   |Name  |Gender    |GPA|DOB       |
 |-----|------|----------|---|----------|
 |1    |Tom   |Male      |3.97|NA        |
@@ -65,7 +64,6 @@ View(M2)
 M3 <- merge(M2, Postal, by.x = c("Name", "Gender", "ID"), by.y = c("col.1", "col.2", "ID"), all = TRUE)
 View(M3)
 ```
-#### M3
 |Name  |Gender|ID |GPA |DOB       |Postal.Code|
 |------|------|---|----|----------|-----------|
 |Chris |Male  |3  |3.6 |18/2/1992 |NA         |
@@ -79,7 +77,6 @@ View(M3)
 ```{r}
 M4 <- merge(M2, Postal, by = "ID", by.x = c("Name", "Gender", "ID"), by.y = c("col.1", "col.2", "ID"), all = TRUE)
 ```
-#### M4
 |Name  |Gender|ID |GPA |DOB       |Postal.Code|
 |------|------|---|----|----------|-----------|
 |Chris |Male  |3  |3.6 |18/2/1992 |NA         |

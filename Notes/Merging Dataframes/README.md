@@ -9,7 +9,6 @@ GPA <- read.csv(".../.../GPA.csv", header = T)
 DOB <- read.csv(".../.../DOB.csv", header = T)
 Postal <- read.csv(".../.../Postal Code.csv", header = T)
 ```
-
 #### GPA
 | ID          | Name        | Gender      | GPA             | 
 |:------------|:------------|:------------|:----------------|
@@ -17,6 +16,21 @@ Postal <- read.csv(".../.../Postal Code.csv", header = T)
 | 2           | Sally       | F           | 4.00            |
 | 3           | Chris       | M           | 3.60            | 
 | 4           | Emma        | F           | 3.80            | 
+
+#### DOB
+|ID |Name |Gender|DOB       |
+|---|-----|------|----------|
+|2  |Sally|Female|22/6/2000 |
+|3  |Chris|Male  |18/2/1992 |
+|4  |Emma |Female|31/12/1999|
+
+#### Postal
+|ID |col 1|col 2 |Postal Code|
+|---|-----|------|-----------|
+|1  |Tom  |Male  |94078      |
+|2  |Sally|Female|90006      |
+|5  |Harvey|Male |80912      |
+|6  |Grace|Female|45678      |
 
 
 

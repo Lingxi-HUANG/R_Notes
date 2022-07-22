@@ -10,10 +10,15 @@ DOB <- read.csv(".../.../DOB.csv", header = T)
 Postal <- read.csv(".../.../Postal Code.csv", header = T)
 ```
 
-<p align="center">  
-<img src="https://github.com/Lingxi-HUANG/R_Notes/blob/main/Notes/Merging%20Dataframes/Figure/DOB.JPG"
-width="600"></center>  
-</p>  
+#### GPA
+| ID          | Name        | Gender      | GPA             | 
+|:------------|:------------|:------------|:----------------|
+| 1           | Tom         | M           | 3.97            |
+| 2           | Sally       | F           | 4.00            |
+| 3           | Chris       | M           | 3.60            | 
+| 4           | Emma        | F           | 3.80            | 
+
+
 
 ### Merge two dataframes
 Merge the first two dataframes with only overlapping observations

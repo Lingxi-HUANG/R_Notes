@@ -32,3 +32,4 @@ When making this repository, I am very grateful to [this github example](https:/
 * Quck list of [R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages) by Garrett Grolemund
 * Markdown [emoji list](https://gist.github.com/rxaviers/7360908#file-gistfile1-md)
 * CSV to markdown table [online converter](https://www.convertcsv.com/csv-to-markdown.htm)
+* [12 ggplot extensions for snazzier R graphics](https://www.infoworld.com/article/3667496/12-ggplot-extensions-for-snazzier-r-graphics.html) by Sharon Machlis

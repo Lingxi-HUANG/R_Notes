@@ -11,8 +11,8 @@ pacman::p_load(here,
 ```
 
 2. Content
-3. Density graph
-## Loading a dataset
+
+# Loading a dataset
 ```r
 # Load the dataset -------------------------------------
 sample <- read.csv(here("sample.csv"), header = TRUE)
@@ -25,7 +25,8 @@ sample <- sample %>%
 sample %>%
   head(10) %>%
 ```
-## Draw a basic density plot
+
+# Draw a basic density plot
 ```r
 # Change the trip duration column to numeric format ---
 sample$trip_duration <- sample$trip_duration %>%
@@ -41,7 +42,7 @@ dens_plot <- sample %>%
 dens_plot # visualize the plot
 ```
 
-## Adding layers into the plot
+# Adding layers into the plot
 ```r
 # Add title, ubtitle, axis title ----------------------
 dens_plot <- dens_plot +
@@ -50,6 +51,19 @@ dens_plot <- dens_plot +
        x = "Trip Duration",
        y = "Density",
        fill = "Membership")
+
+dens_plot
+```
+# Modify how it looks
+```r
+# Add theme elements into the plot -------------------
+dens_plot <- dens_plot +
+  theme_bw() +
+  theme(
+    title = element_text(face = "bold", color = "black"),
+    axis.title = element_text(face = "bold", color = "black"),
+    panel.grid.major.x = element_blank()
+  )
 
 dens_plot
 ```

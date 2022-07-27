@@ -7,7 +7,8 @@ pacman::p_load(here,
                tidyverse, 
                janitor, # Cleaning column names  
                scales, # Transform axis scales
-               ggplot2) 
+               ggplot2,
+               lubridate) # Transform string to datetime    
 ```
 
 2. Content
@@ -69,5 +70,24 @@ dens_plot
 ```
 ![](https://github.com/Lingxi-HUANG/R_Notes/blob/main/Notes/ggplot_visualization/figure/Dense_plot.jpeg)
 
-4. Column graph in various forms (step by step to add layer)
+# Draw a basic bar chart
+```r
+# Define the time frame
+sample <- sample %>%
+  mutate(started_at = as.Date(started_at),
+         ended_at = as.Date(ended_at))
+
+max_ym <- max(format(sample$started_at, "%Y-%m"))
+min_ym <- min(format(sample$started_at, "%Y-%m"))
+
+# Create a basic bar chart with a title
+bar_chart <- ggplot(data = sample) +
+  geom_bar(mapping = aes(x = bike_type, fill = bike_type)) +
+  labs(title = "Popularity of Bike Types",
+       subtitle = paste0("From ", min_ym, " to ", max_ym),
+       x = "Bikes",
+       y = "Number of Rides")
+
+bar_chart # visualize the chart
+```
 5. 

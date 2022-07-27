@@ -67,6 +67,7 @@ dens_plot <- dens_plot +
 
 dens_plot
 ```
+![](https://github.com/Lingxi-HUANG/R_Notes/blob/main/Notes/ggplot_visualization/figure/Dense_plot.jpeg)
 
 4. Column graph in various forms (step by step to add layer)
 5. 

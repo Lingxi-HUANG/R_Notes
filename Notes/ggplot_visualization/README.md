@@ -90,4 +90,26 @@ bar_chart <- ggplot(data = sample) +
 
 bar_chart # visualize the chart
 ```
-5. 
+![](https://github.com/Lingxi-HUANG/R_Notes/blob/main/Notes/ggplot_visualization/figure/Bar_chart.jpeg)
+
+# Add aesthetic elements
+```r
+# modify the color, theme and y axis ------------------------
+bar_chart <- bar_chart +
+  scale_fill_brewer() +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  theme_bw() +
+  theme(
+    title = element_text(face = "bold", color = "black"),
+    axis.title = element_text(face = "bold", color = "black"),
+    panel.grid.major.x = element_blank()
+  )
+
+bar_chart
+```
+![](https://github.com/Lingxi-HUANG/R_Notes/blob/main/Notes/ggplot_visualization/figure/Bar_chart_2.jpeg)
+
+
+# External Resource
+* [Sequential, diverging and qualitative colour scales from ColorBrewer](https://ggplot2.tidyverse.org/reference/scale_brewer.html)
+

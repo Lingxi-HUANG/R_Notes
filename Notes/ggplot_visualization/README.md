@@ -77,8 +77,8 @@ sample <- sample %>%
   mutate(started_at = as.Date(started_at),
          ended_at = as.Date(ended_at))
 
-max_ym <- max(format(sample$started_at, "%Y-%m"))
-min_ym <- min(format(sample$started_at, "%Y-%m"))
+max_ym <- max(format(sample$started_at, "%Y-%m-%d"))
+min_ym <- min(format(sample$started_at, "%Y-%m-%d"))
 
 # Create a basic bar chart with a title
 bar_chart <- ggplot(data = sample) +

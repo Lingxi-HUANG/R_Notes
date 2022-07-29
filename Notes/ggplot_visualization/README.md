@@ -139,7 +139,7 @@ bar_chart_1 # visualize the plot
 # create another style of bar chart ---------------------------------
 bar_chart_2 <- avg_trip_day %>% 
   ggplot() +
-  geom_col(mapping = aes(x = start_weekday, y = avg_trip, fill = user_type), position = "dodge") +
+  geom_col(mapping = aes(x = start_weekday, y = avg_trip, fill = user_type), position = position_dodge(width = 0.9)) +
   labs(title = "Trip length across the week",
        subtitle = paste0("From ", min_ym, " to ", max_ym),
        x = "Weekday",
@@ -157,7 +157,45 @@ bar_chart_2 <- avg_trip_day %>%
 
 bar_chart_2 # visualize the plot
 ```
+# Adding value labels of the plot
+```r
+# Labeling values on the plot -------------------------------------
 
+# calculate the median trip duration 
+med_trip_day <- sample %>%
+  group_by(start_weekday) %>%
+  summarize (median_trip_duration = round(median(trip_duration),1))
+
+# create a bar chat with value labels 
+bar_chart_3 <- med_trip_day %>%
+  ggplot() +
+  geom_col(mapping = aes(x = start_weekday, y = median_trip_duration), color = "black", fill = "darkcyan") +
+  labs(title = "Trip length across the week",
+       subtitle = paste0("From ", min_ym, " to ", max_ym),
+       x = "Weekday",
+       y = "Trip length") +
+       theme_bw() +
+  theme(
+    title = element_text(face = "bold", color = "black"),
+    axis.title = element_text(face = "bold", color = "black"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank()
+  ) +
+  scale_y_continuous(limits = c(0, 20)) + # set the y axis spanning from 0 to 20
+  geom_text(aes(x = start_weekday, y = median_trip_duration, label = median_trip_duration), vjust = -1)
+
+bar_chart_3
+```
+
+# Value labels for multiple columns
+```r
+bar_chart_4 <- bar_chart_2 +
+  scale_y_continuous(limits = c(0,70)) +
+  geom_text(aes(x = start_weekday, y = avg_trip, label = avg_trip, fill = user_type), position = position_dodge(width = 0.9), vjust = -0.5) # The key is to position = position_dodge(width = .9) (where .9 is the default width of the bars) instead of position = "dodge", which is just a shortcut without any parameter. 
+
+bar_chart_4 # visualize the plot
+```
 # External Resource
 * [Sequential, diverging and qualitative colour scales from ColorBrewer](https://ggplot2.tidyverse.org/reference/scale_brewer.html)
 

@@ -109,6 +109,52 @@ bar_chart
 ```
 ![](https://github.com/Lingxi-HUANG/R_Notes/blob/main/Notes/ggplot_visualization/figure/Bar_chart_2.jpeg)
 
+```r
+# average trip duration in different hour of the week ---------------
+avg_trip_day <- sample %>%
+  group_by(start_weekday, user_type) %>%
+  summarize(avg_trip = mean(trip_duration))
+
+# create a bar chart separated by membership type
+bar_chart_1 <- avg_trip_day %>% ggplot() +
+  geom_col(mapping = aes(x = start_weekday, y = avg_trip, fill = user_type)) +
+  facet_wrap(~user_type) +  # separately show the plot based on user_type
+  labs(title = "Trip length across the week",
+       subtitle = paste0("From ", min_ym, " to ", max_ym),
+       x = "Weekday",
+       y = "Trip length",
+       fill = "Membership") +
+  scale_fill_brewer() + 
+  theme_bw() +
+  theme(
+    title = element_text(face = "bold", color = "black"),
+    axis.title = element_text(face = "bold", color = "black"),
+    panel.grid.major.x = element_blank()
+  )
+
+bar_chart_1 # visualize the plot
+
+# create another style of bar chart ---------------------------------
+bar_chart_2 <- avg_trip_day %>% 
+  ggplot() +
+  geom_col(mapping = aes(x = start_weekday, y = avg_trip, fill = user_type), position = "dodge") +
+  labs(title = "Trip length across the week",
+       subtitle = paste0("From ", min_ym, " to ", max_ym),
+       x = "Weekday",
+       y = "Trip length",
+       fill = "Membership") +
+  scale_fill_brewer() + 
+  theme_bw() +
+  theme(
+    title = element_text(face = "bold", color = "black"),
+    axis.title = element_text(face = "bold", color = "black"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank()
+  )
+
+bar_chart_2 # visualize the plot
+```
 
 # External Resource
 * [Sequential, diverging and qualitative colour scales from ColorBrewer](https://ggplot2.tidyverse.org/reference/scale_brewer.html)

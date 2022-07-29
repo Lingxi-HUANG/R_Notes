@@ -189,6 +189,8 @@ bar_chart_3
 ```
 
 # Value labels for multiple columns
+The key is to position = position_dodge(width = .9) (where .9 is the default width of the bars) instead of position = "dodge", which is just a shortcut without any parameter. Also, we need to tell which variable to dodge on. In this case it is the user_type, so it is necessary to put fill = user_type within the aes().
+
 ```r
 bar_chart_4 <- bar_chart_2 +
   scale_y_continuous(limits = c(0,70)) +
@@ -198,4 +200,5 @@ bar_chart_4 # visualize the plot
 ```
 # External Resource
 * [Sequential, diverging and qualitative colour scales from ColorBrewer](https://ggplot2.tidyverse.org/reference/scale_brewer.html)
+* Tips for value lables in multiple columns from [`here`](https://stackoverflow.com/questions/6017460/position-geom-text-on-dodged-barplot), [`here`](https://stackoverflow.com/questions/26660525/add-text-on-top-of-a-faceted-dodged-bar-chart/26661791#26661791) and [`here`](https://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge)
 

@@ -133,7 +133,9 @@ bar_chart_1 <- avg_trip_day %>% ggplot() +
   )
 
 bar_chart_1 # visualize the plot
+```
 
+```r
 # create another style of bar chart ---------------------------------
 bar_chart_2 <- avg_trip_day %>% 
   ggplot() +

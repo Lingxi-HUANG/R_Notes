@@ -1,3 +1,10 @@
+# ggplot and data visualization examples
+
+- [Introduction](#Introduction)
+- [Load a dataset](#Loading-a-dataset)
+- [Draw a density plot](#Draw-a-basic-density-plot)
+- [Draw a bar chart](#Draw-a-basic-bar-chart)
+
 # Introduction
 Ggplot is a powerful tool in R that is designed to visualize data as it allows flexibility for author to create varies graphs through add or minus elements/layers. However, such flexibility can sometimes cause complications and difficulties because users hardly memorize all codes and arguments for adding ggplot layers. This post is served as a note book that stores examples of varies ggplot and data visualization examples. The content will continue update...
 
@@ -13,12 +20,6 @@ pacman::p_load(here,
                lubridate) # Transform string to datetime    
 ```
 
-# Content Summary
-
-| Legend | Topics |
-| ------ | ------ |
-|  :dart: | Density Plot  |
-|  :art: | Bar Chart  |
 
 # Loading a dataset
 ```r

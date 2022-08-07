@@ -161,6 +161,18 @@ bar_chart_2 <- avg_trip_day %>%
 bar_chart_2 # visualize the plot
 ```
 # Adding value labels of the plot
+
+### Value labels for multiple columns
+The key is to position = position_dodge(width = .9) (where .9 is the default width of the bars) instead of position = "dodge", which is just a shortcut without any parameter. Also, we need to tell which variable to dodge on. In this case it is the user_type, so it is necessary to put fill = user_type within the aes().
+
+```r
+bar_chart_3 <- bar_chart_2 +
+  scale_y_continuous(limits = c(0,70)) +
+  geom_text(aes(x = start_weekday, y = avg_trip, label = avg_trip, fill = user_type), position = position_dodge(width = 0.9), vjust = -0.5) # The key is to position = position_dodge(width = .9) (where .9 is the default width of the bars) instead of position = "dodge", which is just a shortcut without any parameter. 
+
+bar_chart_3 # visualize the plot
+```
+
 ```r
 # Labeling values on the plot -------------------------------------
 
@@ -170,7 +182,7 @@ med_trip_day <- sample %>%
   summarize (median_trip_duration = round(median(trip_duration),1))
 
 # create a bar chat with value labels 
-bar_chart_3 <- med_trip_day %>%
+bar_chart_4 <- med_trip_day %>%
   ggplot() +
   geom_col(mapping = aes(x = start_weekday, y = median_trip_duration), color = "black", fill = "darkcyan") +
   labs(title = "Trip length across the week",
@@ -188,19 +200,9 @@ bar_chart_3 <- med_trip_day %>%
   scale_y_continuous(limits = c(0, 20)) + # set the y axis spanning from 0 to 20
   geom_text(aes(x = start_weekday, y = median_trip_duration, label = median_trip_duration), vjust = -1)
 
-bar_chart_3
+bar_chart_4
 ```
 
-# Value labels for multiple columns
-The key is to position = position_dodge(width = .9) (where .9 is the default width of the bars) instead of position = "dodge", which is just a shortcut without any parameter. Also, we need to tell which variable to dodge on. In this case it is the user_type, so it is necessary to put fill = user_type within the aes().
-
-```r
-bar_chart_4 <- bar_chart_2 +
-  scale_y_continuous(limits = c(0,70)) +
-  geom_text(aes(x = start_weekday, y = avg_trip, label = avg_trip, fill = user_type), position = position_dodge(width = 0.9), vjust = -0.5) # The key is to position = position_dodge(width = .9) (where .9 is the default width of the bars) instead of position = "dodge", which is just a shortcut without any parameter. 
-
-bar_chart_4 # visualize the plot
-```
 # External Resource
 * [Sequential, diverging and qualitative colour scales from ColorBrewer](https://ggplot2.tidyverse.org/reference/scale_brewer.html)
 * Tips for value lables in multiple columns from [`here`](https://stackoverflow.com/questions/6017460/position-geom-text-on-dodged-barplot), [`here`](https://stackoverflow.com/questions/26660525/add-text-on-top-of-a-faceted-dodged-bar-chart/26661791#26661791) and [`here`](https://stackoverflow.com/questions/34889766/what-is-the-width-argument-in-position-dodge)

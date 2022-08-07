@@ -137,6 +137,8 @@ bar_chart_1 <- avg_trip_day %>% ggplot() +
 
 bar_chart_1 # visualize the plot
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/ggplot_visualization/figure/Bar_chart_3.jpeg)
+
 
 ```r
 # create another style of bar chart ---------------------------------
@@ -160,6 +162,8 @@ bar_chart_2 <- avg_trip_day %>%
 
 bar_chart_2 # visualize the plot
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/ggplot_visualization/figure/Bar_chart_4.jpeg)
+
 # Adding value labels of the plot
 
 ### Value labels for multiple columns
@@ -172,6 +176,7 @@ bar_chart_3 <- bar_chart_2 +
 
 bar_chart_3 # visualize the plot
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/ggplot_visualization/figure/Bar_chart_5.jpeg)
 
 ```r
 # Labeling values on the plot -------------------------------------

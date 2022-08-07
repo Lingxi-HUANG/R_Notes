@@ -1,4 +1,6 @@
 # Introduction
+Ggplot is a powerful tool in R that is designed to visualize data as it allows flexibility for author to create varies graphs through add or minus elements/layers. However, such flexibility can sometimes cause complications and difficulties because users hardly memorize all codes and arguments for adding ggplot layers. This post is served as a note book that stores examples of varies ggplot and data visualization examples. The content will continue update...
+
 
 ```r
 # Load libraries --------------------------------------
@@ -171,7 +173,7 @@ The key is to position = position_dodge(width = .9) (where .9 is the default wid
 
 ```r
 bar_chart_3 <- bar_chart_2 +
-  scale_y_continuous(limits = c(0,70)) +
+  scale_y_continuous(limits = c(0,70)) + # set the y-axis from 0 to 70
   geom_text(aes(x = start_weekday, y = avg_trip, label = avg_trip, fill = user_type), position = position_dodge(width = 0.9), vjust = -0.5) # The key is to position = position_dodge(width = .9) (where .9 is the default width of the bars) instead of position = "dodge", which is just a shortcut without any parameter. 
 
 bar_chart_3 # visualize the plot

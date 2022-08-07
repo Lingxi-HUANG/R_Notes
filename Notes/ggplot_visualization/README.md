@@ -42,6 +42,7 @@ dens_plot <- sample %>%
 
 dens_plot # visualize the plot
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/ggplot_visualization/figure/Dense_plot_1.jpeg)
 
 # Adding layers into the plot
 ```r
@@ -55,6 +56,8 @@ dens_plot <- dens_plot +
 
 dens_plot
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/ggplot_visualization/figure/Dense_plot_2.jpeg)
+
 # Modify how it looks
 ```r
 # Add theme elements into the plot -------------------

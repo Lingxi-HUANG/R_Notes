@@ -207,6 +207,7 @@ bar_chart_4 <- med_trip_day %>%
 
 bar_chart_4
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/ggplot_visualization/figure/Bar_chart_6.jpeg)
 
 # External Resource
 * [Sequential, diverging and qualitative colour scales from ColorBrewer](https://ggplot2.tidyverse.org/reference/scale_brewer.html)

@@ -13,7 +13,12 @@ pacman::p_load(here,
                lubridate) # Transform string to datetime    
 ```
 
-2. Content
+# Content Summary
+
+| Legend | Topics |
+| ------ | ------ |
+|  :dart: | Density Plot  |
+|  :art: | Bar Chart  |
 
 # Loading a dataset
 ```r

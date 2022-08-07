@@ -22,7 +22,7 @@ When making this repository, I am very grateful to [this github example](https:/
 
 ## :art: Data Visuliazation
 * [Examples using ggplot2]()
-* [Geo analysis]()
+* [Geo analysis - to be updated]()
 
 ## :memo: Other Resources
 * [How the BBC Visual and Data Journalism team works with graphics in R](https://github.com/bbc/bbplot) by BBC Visual and Data Journalism

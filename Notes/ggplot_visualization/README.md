@@ -22,6 +22,7 @@ pacman::p_load(here,
 
 
 # Load a dataset
+The dataset I am using is from the capstone project I did for Google Analytics Certificate. I am extracting a part of the dataset to produce the following visualization. Here is the link to the [full dataset](https://divvy-tripdata.s3.amazonaws.com/index.html).
 ```r
 # Load the dataset -------------------------------------
 sample <- read.csv(here("sample.csv"), header = TRUE)

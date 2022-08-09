@@ -21,7 +21,7 @@ pacman::p_load(here,
 ```
 
 
-# Loading a dataset
+# Load a dataset
 ```r
 # Load the dataset -------------------------------------
 sample <- read.csv(here("sample.csv"), header = TRUE)

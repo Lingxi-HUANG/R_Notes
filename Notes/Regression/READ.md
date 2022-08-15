@@ -21,7 +21,7 @@ pacman::p_load(tidyverse,
 
 
 # Load a dataset
-The dataset I am using is a dataset called Bonston Housing from the package of MLBENCH. ['Here'](https://rdrr.io/cran/mlbench/man/BostonHousing.html) is the link to the metadata of the dataset.
+The dataset I am using is a dataset called Bonston Housing from the package of MLBENCH. [`Here`](https://rdrr.io/cran/mlbench/man/BostonHousing.html) is the link to the metadata of the dataset.
 ```r
 # Load the dataset from MLBench -----------------------
 data("BostonHousing2")

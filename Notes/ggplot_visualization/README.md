@@ -6,7 +6,7 @@
 - [Draw a bar chart](#Draw-a-basic-bar-chart)
 
 # Introduction
-Ggplot is a powerful tool in R that is designed to visualize data as it allows flexibility for author to create varies graphs through add or minus elements/layers. However, such flexibility can sometimes cause complications and difficulties because users hardly memorize all codes and arguments for adding ggplot layers. This post is served as a note book that stores examples of varies ggplot and data visualization examples. The content will continue update...
+Ggplot is a powerful tool in R that is designed to visualize data as it allows flexibility for author to create varies graphs through adding elements/layers. However, such flexibility can sometimes produce complications and difficulties because users hardly memorize all functions and arguments of the layer. This post is served as a note book that stores examples of varies ggplot and data visualization examples. The content will continue update...
 
 
 ```r

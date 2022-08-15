@@ -1,4 +1,4 @@
-# ggplot and data visualization examples
+# Regression Model
 
 - [Introduction](#Introduction)
 - [Load a dataset](#Loading-a-dataset)

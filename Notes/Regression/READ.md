@@ -31,6 +31,6 @@ head(BostonHousing2)
 
 
 # External Resource
-* [Boston Housing Data from MLbench]([https://ggplot2.tidyverse.org/reference/scale_brewer.html](https://rdrr.io/cran/mlbench/man/BostonHousing.html))
+* [Boston Housing Data from MLbench]([https://ggplot2.tidyverse.org/reference/scale_brewer.html](https://rdrr.io/cran/mlbench/man/BostonHousing.html)
 * [Simple Linear Regression](https://finnstats.com/index.php/2021/10/25/simple-linear-regression-in-r/?utm_source=ReviveOldPost&utm_medium=social&utm_campaign=ReviveOldPost) by Finnstats
 

@@ -27,6 +27,7 @@ The dataset I am using is a dataset called Bonston Housing from the package of M
 data("BostonHousing2")
 head(BostonHousing2)
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/BostonHousing2.png)
 
 
 

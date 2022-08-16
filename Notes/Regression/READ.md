@@ -41,7 +41,7 @@ medv_rm <- ggplot(data = BostonHousing2) +
 
 medv_rm # visualize the graph
 ```
-![]()
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Medv_rm.jpeg)
 
 
 # External Resource

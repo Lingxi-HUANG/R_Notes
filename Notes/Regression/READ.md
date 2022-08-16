@@ -43,6 +43,29 @@ medv_rm # visualize the graph
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Medv_rm.jpeg)
 
+# Fit the model
+```r
+# Create the regression ------------------------------------------------------
+lm <- lm(medv ~ rm, data = BostonHousing2) # fit the model
+summary(lm)                                # Review the result
+```
+
+# Plot for residual versus fitted values
+```r
+plot(lm, which = 1)
+```
+
+# Check for homoscedasticity
+```r
+plot(lm, which = 3)
+```
+
+# Check for normality
+```r
+plot(lm, which = 2)
+```
+
+# 
 
 # External Resource
 * [Boston Housing Data from MLbench](https://rdrr.io/cran/mlbench/man/BostonHousing.html)

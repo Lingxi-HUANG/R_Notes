@@ -29,6 +29,19 @@ head(BostonHousing2)
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/BostonHousing2.png)
 
+# Visualize the relationship between two medv and rm
+```r
+medv_rm <- ggplot(data = BostonHousing2) +
+  geom_point(mapping = aes(x = rm, y = medv)) +
+  geom_smooth(mapping = aes(x = rm, y = medv), method = "lm", se = FALSE) +
+  labs(title = "Relationship between median home value & number of rooms per dwelling",
+       subtitle = "Median home value in 1000 USD",
+       x = "Number of rooms per dwelling",
+       y = "Median home value")
+
+medv_rm # visualize the graph
+```
+![]()
 
 
 # External Resource

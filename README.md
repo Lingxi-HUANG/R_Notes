@@ -26,7 +26,7 @@ When making this repository, I am very grateful to [this github example](https:/
 * [Geo analysis - to be updated]()
 
 ## :chart_with_upwards_trend: Regression
-* [Regression analysis - to be updated]()
+* [Regression analysis](https://github.com/tomtomhuang/R_Notes/tree/main/Notes/Regression)
 
 ## :memo: Other Resources
 * [How the BBC Visual and Data Journalism team works with graphics in R](https://github.com/bbc/bbplot) by BBC Visual and Data Journalism

@@ -49,6 +49,7 @@ medv_rm # visualize the graph
 lm <- lm(medv ~ rm, data = BostonHousing2) # fit the model
 summary(lm)                                # Review the result
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/medv~rm.PNG)
 
 # Plot for residual versus fitted values
 ```r

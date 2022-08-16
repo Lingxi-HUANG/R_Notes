@@ -51,17 +51,17 @@ summary(lm)                                # Review the result
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/medv~rm.PNG)
 
-# Plot for residual versus fitted values
+# Rsidual versus fitted values
 ```r
 plot(lm, which = 1)
 ```
 
-# Check for homoscedasticity
+# Homoscedasticity
 ```r
 plot(lm, which = 3)
 ```
 
-# Check for normality
+# Normality
 ```r
 plot(lm, which = 2)
 ```

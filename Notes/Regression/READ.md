@@ -14,7 +14,7 @@ A regression model is a simple and straight forward statstical tool that analyze
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse, 
                janitor, # Cleaning column names  
-               scales, # Transform axis scales
+               scales,  # Transform axis scales
                ggplot2,
                mlbench) # MLBench is a framework for distributed machine learning. A collection of artificial and real-world machine learning benchmark problems.    
 ```

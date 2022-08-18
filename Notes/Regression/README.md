@@ -51,29 +51,32 @@ summary(lm)                                # Review the result
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/medv~rm.PNG)
 
-
-# Rsidual versus fitted values
-It is essential to make sure that there are a few assumptions of the data are satsified before we can use linear model to successfully generate conclusions. To see if the assumptions are met, we can leverage residuals to validate the assumptions. 
-
+# Assumptions
 The assumptions are as follow:
 * The dataset must have some `linear relationship`
 * `Multivariate normality` - the dataset variables must be statistically Normally Distributed (i.e. resembling a Bell Curve)
 It must have no or little multicollinearity - this means the independent variables must not be too highly correlated with each other. This can be tested with a Correlation matrix and other tests
 * `No auto-correlation` - Autocorrelation occurs when the residuals are not independent from each other. For instance, this typically occurs in stock prices, where the price is not independent from the previous price.
 * `Homoscedasticity` - meaning that the residuals are equally distributed across the regression line i.e. above and below the regression line and the variance of the residuals should be the same for all predicted scores along the regression line.
+
+# Residual versus fitted values
+It is essential to make sure that there are a few assumptions of the data are satsified before we can use linear model to successfully generate conclusions. To see if the assumptions are met, we can leverage residuals to validate the assumptions. 
 ```r
 plot(lm, which = 1)
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Residuals.jpeg)
 
 # Homoscedasticity
 ```r
 plot(lm, which = 3)
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Homoscedasticity.jpeg)
 
 # Normality
 ```r
 plot(lm, which = 2)
 ```
+![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Normality.jpeg)
 
 # 
 

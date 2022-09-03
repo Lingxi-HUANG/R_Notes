@@ -88,11 +88,9 @@ An error is the combined influence of one or more independent variables that are
 
 Making this assumption enables us to derive the probability distribution of OLS estimators since any linear function of a normally distributed variable is itself normally distributed. Thus, OLS estimators are also normally distributed. It further allows us to use t and F tests for hypothesis testing.
 
-The easiest way to check if the errors are normally distributed is to use the P-P (Probability — Probability)plot.
+One of the easiest ways to check if the errors are normally distributed is to use the QQ plot. 
 
-A P-P plot assesses how closely a theoretical distribution models a given data distribution. A normal probability plot of the residuals is a scatter plot with the theoretical percentiles of the normal distribution on the x-axis and the sample percentiles of the residuals on the y-axis.
-
-The comparison line is the 45 degree diagonal line. The diagonal line which passes through the lower and upper percentiles of the theoretical distribution provides a visual aid to help assess whether the relationship between the theoretical and sample percentiles is linear. The distributions are equal if and only if the plot falls on this line. Any deviation from this line indicates a difference between the two distributions.
+High level speaking, QQ-plot (Quantile-Quantile plot) is a scatter plot, often be used to check if a variable follows the normal distribution (or any other distributions). If all points on the QQ-plot form (or almost form) a straight line, it is a high chance that the examining variable is normally distributed. On the other hand, if the points do not make it a straight line, the variable probably does not come from the normal distribution.
 
 In the case below, the error distribution is approximately normal. 
 ```r

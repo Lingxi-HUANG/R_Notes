@@ -33,13 +33,13 @@ head(BostonHousing2)
 ```r
 medv_rm <- ggplot(data = BostonHousing2) +
   geom_point(mapping = aes(x = rm, y = medv)) +
-  geom_smooth(mapping = aes(x = rm, y = medv), method = "lm", se = FALSE) +
+  geom_smooth(mapping = aes(x = rm, y = medv), method = "lm", se = FALSE) +     # add a regression line
   labs(title = "Relationship between median home value & number of rooms per dwelling",
        subtitle = "Median home value in 1000 USD",
        x = "Number of rooms per dwelling",
        y = "Median home value")
 
-medv_rm # visualize the graph
+medv_rm                                                                         # visualize the graph
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Medv_rm.jpeg)
 
@@ -83,4 +83,7 @@ plot(lm, which = 2)
 # External Resource
 * [Boston Housing Data from MLbench](https://rdrr.io/cran/mlbench/man/BostonHousing.html)
 * [Simple Linear Regression](https://finnstats.com/index.php/2021/10/25/simple-linear-regression-in-r/?utm_source=ReviveOldPost&utm_medium=social&utm_campaign=ReviveOldPost) by Finnstats
+* https://www.datacamp.com/tutorial/linear-regression-R
+* https://www.kellogg.northwestern.edu/faculty/weber/emp/_session_3/nonlinearities.htm
+* https://rpubs.com/iabrady/residual-analysis
 

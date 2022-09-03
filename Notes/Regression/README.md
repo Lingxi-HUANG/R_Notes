@@ -64,7 +64,7 @@ It must have no or little multicollinearity - this means the independent variabl
 * `Homoscedasticity` - meaning that the residuals are equally distributed across the regression line i.e. above and below the regression line and the variance of the residuals should be the same for all predicted scores along the regression line.
 * `Multi-collinarity` - There is no (low) correlation between independent variables. This happens in the case of multivariable regression. When one independent variable is highly correlates with another indepedent variable in the model, it is hard to isolate the impact of an indepdent variable when it changes as the other highly correlated indepedent variable cannot be easily controlled. 
 
-# Residual versus fitted values
+## Residual versus fitted values
 The linear regression algorithm assumes that there is a linear relationship between the parameters of independent variables and the dependent variable Y. If the true relationship is not linear, we cannot use the model as the accuracy will be significantly reduced.
 
 Thus, it becomes important to validate this assumption. This is done by plotting `Residual Plots`. 
@@ -83,7 +83,7 @@ plot(lm, which = 3)
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Homoscedasticity.jpeg)
 
-# Normality
+## Normality
 An error is the combined influence of one or more independent variables that are not included in the model. The Central Limit theorem states that if there are a large number of independent and identically distributed random variables, then the distribution of their sum tends to be a normal distribution as the number of variables increases. Thus, the CLT theoretically explains the reason why the ‘normal distribution’ is assumed for the errors.
 
 Making this assumption enables us to derive the probability distribution of OLS estimators since any linear function of a normally distributed variable is itself normally distributed. Thus, OLS estimators are also normally distributed. It further allows us to use t and F tests for hypothesis testing.
@@ -100,7 +100,7 @@ plot(lm, which = 2)
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Normality.jpeg)
 
-# Multi-collinarity
+## Multi-collinarity
 We can use a `scatter plot` to check the correlation between the independent variables. High correlations are easily visualized from the scatter plot. If the points lie on the diagonal line or close to the diagonal line, we can infer high correlation between two variables.
 
 Another method to check for the multi-collianrity is to use the `Variance Inflation Factor`(VIF). VIF is used as an indicator of multicollinearity. The larger the value of VIF, the more correlated the variable is with other regressors.

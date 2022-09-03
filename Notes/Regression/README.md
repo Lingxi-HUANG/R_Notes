@@ -76,7 +76,7 @@ plot(lm, which = 1)
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Residuals.jpeg)
 
-# Homoscedasticity
+## Homoscedasticity
 Heteroscedasticity produces a distinctive fan or cone shape in residual plots. To check for heteroscedasticity, you need to assess the residuals by fitted value plots in case of multiple linear regression and residuals vs. explanatory variable in case of simple linear regression. Typically, the pattern for heteroscedasticity is that as the fitted values increases, the variance of the residuals also increases.
 ```r
 plot(lm, which = 3)

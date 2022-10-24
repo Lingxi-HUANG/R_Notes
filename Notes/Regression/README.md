@@ -1,4 +1,4 @@
-# Linear Regression Model
+# Linear Regression Model (WIP)
 
 - [Introduction](#Introduction)
 - [Load a dataset](#Loading-a-dataset)
@@ -62,7 +62,7 @@ The assumptions are as follow:
 It must have no or little multicollinearity - this means the independent variables must not be too highly correlated with each other. This can be tested with a Correlation matrix and other tests
 * `No auto-correlation` - Autocorrelation occurs when the residuals are not independent from each other. For instance, this typically occurs in stock prices, where the price is not independent from the previous price.
 * `Homoscedasticity` - meaning that the residuals are equally distributed across the regression line i.e. above and below the regression line and the variance of the residuals should be the same for all predicted scores along the regression line.
-* `Multi-collinarity` - There is no (low) correlation between independent variables. This happens in the case of multivariable regression. When one independent variable is highly correlates with another indepedent variable in the model, it is hard to isolate the impact of an indepdent variable when it changes as the other highly correlated indepedent variable cannot be easily controlled. 
+* `Multicollinarity` - There is no (low) correlation between independent variables. This happens in the case of multivariable regression. When one independent variable is highly correlates with another indepedent variable in the model, it is hard to isolate the impact of an indepdent variable when it changes as the other highly correlated indepedent variable cannot be easily controlled. 
 
 ## Residual versus fitted values
 The linear regression algorithm assumes that there is a linear relationship between the parameters of independent variables and the dependent variable Y. If the true relationship is not linear, we cannot use the model as the accuracy will be significantly reduced.
@@ -98,7 +98,7 @@ plot(lm, which = 2)
 ```
 ![](https://github.com/tomtomhuang/R_Notes/blob/main/Notes/Regression/Figure/Normality.jpeg)
 
-## Multi-collinarity
+## Multicollinarity
 We can use a `scatter plot` to check the correlation between the independent variables. High correlations are easily visualized from the scatter plot. If the points lie on the diagonal line or close to the diagonal line, we can infer high correlation between two variables.
 
 Another method to check for the multi-collianrity is to use the `Variance Inflation Factor`(VIF). VIF is used as an indicator of multicollinearity. The larger the value of VIF, the more correlated the variable is with other regressors.
